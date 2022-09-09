@@ -1,11 +1,14 @@
-// const numbers = [5, 10, 15, 20, 25];
+const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+const authors = [
+  'Tanith Lee',
+  'Bernard Cornwell',
+  'Robert Sheckley',
+  'Fyodor Dostoevsky',
+];
+// Change code below this line
 
-// // Класичний for
-// for (let i = 0; i < numbers.length; i += 1) {
-//   console.log(`Індекс ${i}, значення ${numbers[i]}`);
-// }
+const ascendingReleaseDates = [...releaseDates].sort();
+console.log(ascendingReleaseDates);
 
-// // Метод перебирання forEach
-// numbers.forEach(function (number, index) {
-//   console.log(`Індекс ${index}, значення ${number}`);
-// });
+const alphabeticalAuthors = [...authors].sort((a, b) => b - a);
+console.log(alphabeticalAuthors);
